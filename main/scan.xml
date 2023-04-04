@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Tue Apr  4 16:02:08 2023 as: nmap -iL C:\\pych\\scan\\main\\media\\IP.txt -oX scan.xml -sU -p U:200 -->
+<nmaprun scanner="nmap" args="nmap -iL C:\\pych\\scan\\main\\media\\IP.txt -oX scan.xml -sU -p U:200" start="1680613328" startstr="Tue Apr  4 16:02:08 2023" version="7.92" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="1" services="200"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.108.217" addrtype="ipv4"/>
+<address addr="64:6C:80:DB:95:19" addrtype="mac" vendor="Chongqing Fugui Electronics"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1680613329" endtime="1680613329"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="192.168.108.139" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="200"><state state="closed" reason="port-unreach" reason_ttl="128"/><service name="src" method="table" conf="3"/></port>
+</ports>
+<times srtt="1000" rttvar="5000" to="100000"/>
+</host>
+<host starttime="1680613329" endtime="1680613332"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.108.217" addrtype="ipv4"/>
+<address addr="64:6C:80:DB:95:19" addrtype="mac" vendor="Chongqing Fugui Electronics"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="udp" portid="200"><state state="open|filtered" reason="no-response" reason_ttl="0"/><service name="src" method="table" conf="3"/></port>
+</ports>
+<times srtt="278000" rttvar="278000" to="1390000"/>
+</host>
+<runstats><finished time="1680613332" timestr="Tue Apr  4 16:02:12 2023" summary="Nmap done at Tue Apr  4 16:02:12 2023; 2 IP addresses (2 hosts up) scanned in 3.95 seconds" elapsed="3.95" exit="success"/><hosts up="2" down="0" total="2"/>
+</runstats>
+</nmaprun>
